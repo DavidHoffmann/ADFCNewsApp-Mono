@@ -774,6 +774,9 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			// aapt resource value: 0x7f020057
 			public const int Icon = 2130837591;
 			
+			// aapt resource value: 0x7f020058
+			public const int splash = 2130837592;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -1324,6 +1327,9 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			
 			// aapt resource value: 0x7f0b0079
 			public const int Theme_Base_Light = 2131427449;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int Theme_Splash = 2131427455;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int Widget_AppCompat_ActionBar = 2131427328;

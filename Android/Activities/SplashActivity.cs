@@ -1,5 +1,5 @@
 //
-//  MainActivity.cs
+//  Splash.cs
 //
 //  Author:
 //       David Hoffmann <david@hoffmann-projects.de>
@@ -20,39 +20,37 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using Android.App;
 using Android.Content;
+using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-using Android.Support.V7.App;
-using Android.Support.V4.View;
+using de.dhoffmann.xamarin.adfcnewsapp.core;
+using System.Threading.Tasks;
 
-namespace de.dhoffmann.xamarin.adfcnewsapp.android
+namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 {
-	[Activity (Label = "Android", MainLauncher = true, Theme = "@style/Theme.AppCompat")]
-	public class MainActivity : ActionBarActivity
+	[Activity (Label = "@string/app_name", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash")]			
+	public class SplashActivity : Activity
 	{
-		int count = 1;
-
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate (Bundle savedInstanceState)
 		{
-			base.OnCreate (bundle);
-			SupportRequestWindowFeature(WindowCompat.FeatureActionBar);
+			base.OnCreate (savedInstanceState);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+			Logging.Log (this, Logging.LogType.Debug, "OnCreate");
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			AppInit appInit = new AppInit();
+			appInit.AppStartAsync ().ContinueWith (t => {
+				Logging.Log (this, Logging.LogType.Debug, "OnCreate(): Start activity NewsActivity");
+
+				// redirect to NewsActivity
+				StartActivity(typeof(NewsActivity));
+			}, TaskScheduler.FromCurrentSynchronizationContext ());
 		}
 	}
 }
-
 
