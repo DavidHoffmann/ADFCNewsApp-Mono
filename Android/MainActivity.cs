@@ -26,17 +26,20 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Support.V4.View;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.android
 {
-	[Activity (Label = "Android", MainLauncher = true)]
-	public class MainActivity : Activity
+	[Activity (Label = "Android", MainLauncher = true, Theme = "@style/Theme.AppCompat")]
+	public class MainActivity : ActionBarActivity
 	{
 		int count = 1;
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+			SupportRequestWindowFeature(WindowCompat.FeatureActionBar);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
