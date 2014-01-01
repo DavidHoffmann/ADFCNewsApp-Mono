@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Android" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Core/Logging.cs">
+    <Files>
+      <File FileName="../../../../Android/Activities/SplashActivity.cs" Line="50" Column="55" />
+      <File FileName="../../../../Android/Activities/NewsActivity.cs" Line="1" Column="1" />
+      <File FileName="../../../../Test/TestLogging.cs" Line="30" Column="3" />
+      <File FileName="AnalyticsDroidSample/MainActivity.cs" Line="65" Column="55" />
+      <File FileName="../../../../Core/Logging.cs" Line="91" Column="4" />
+      <File FileName="../../../../Android/Resources/values/analytics.xml" Line="9" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Android" selected="True" />
+          <Node name="Core" expanded="True" />
+          <Node name="IOS" expanded="True" />
+          <Node name="Test" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

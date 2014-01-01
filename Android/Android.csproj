@@ -50,6 +50,18 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Android|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,6 +73,9 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\Components\xamandroidsupportv7appcompat-7.18.0\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalytics.Android">
+      <HintPath>..\Components\googleanalytics-3.0.2\lib\android\GoogleAnalytics.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +96,7 @@
     <AndroidResource Include="Resources\values\Style.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable-land\splash.png" />
+    <AndroidResource Include="Resources\values\analytics.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -91,8 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">
-      <InstallationInProgress>True</InstallationInProgress>
       <Version>7.18.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleanalytics">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>3.0.2</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
