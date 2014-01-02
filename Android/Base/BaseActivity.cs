@@ -40,8 +40,10 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android.Base
 		{
 			base.OnStart ();
 
+			#if !DEBUG
 			// Start Google Analytics Easy Tracker
 			EasyTracker.GetInstance (this).ActivityStart (this);
+			#endif
 		}
 
 
@@ -49,8 +51,10 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android.Base
 		{
 			base.OnStop ();
 
+			#if !DEBUG
 			// Stop Google Analytics Easy Tracker
 			EasyTracker.GetInstance (this).ActivityStop (this);
+			#endif
 		}
 	}
 }
