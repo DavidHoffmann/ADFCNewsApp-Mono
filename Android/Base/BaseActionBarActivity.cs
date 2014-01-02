@@ -1,5 +1,5 @@
 //
-//  Splash.cs
+//  BaseActionBarActivity.cs
 //
 //  Author:
 //       David Hoffmann <david@hoffmann-projects.de>
@@ -29,28 +29,29 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using de.dhoffmann.xamarin.adfcnewsapp.core;
-using System.Threading.Tasks;
-using de.dhoffmann.xamarin.adfcnewsapp.android.Base;
+using Google.Analytics.Tracking;
+using Android.Support.V7.App;
 
-namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
+namespace de.dhoffmann.xamarin.adfcnewsapp.android.Base
 {
-	[Activity (Label = "@string/app_name", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash")]			
-	public class SplashActivity : BaseActivity
+	[Activity]			
+	public class BaseActionBarActivity : ActionBarActivity
 	{
-		protected override void OnCreate (Bundle savedInstanceState)
+		protected override void OnStart ()
 		{
-			base.OnCreate (savedInstanceState);
+			base.OnStart ();
 
-			Logging.Log (this, Logging.LogType.Debug, "OnCreate");
+			// Start Google Analytics Easy Tracker
+			EasyTracker.GetInstance (this).ActivityStart (this);
+		}
 
-			AppInit appInit = new AppInit();
-			appInit.AppStartAsync ().ContinueWith (t => {
-				Logging.Log (this, Logging.LogType.Debug, "OnCreate(): Start activity NewsActivity");
 
-				// redirect to NewsActivity
-				StartActivity(typeof(NewsActivity));
-			}, TaskScheduler.FromCurrentSynchronizationContext ());
+		protected override void OnStop ()
+		{
+			base.OnStop ();
+
+			// Stop Google Analytics Easy Tracker
+			EasyTracker.GetInstance (this).ActivityStop (this);
 		}
 	}
 }
