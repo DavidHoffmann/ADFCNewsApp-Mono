@@ -25,6 +25,8 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 			SupportRequestWindowFeature(WindowCompat.FeatureActionBar);
 
 			Logging.Log (this, Logging.LogType.Debug, "OnCreate");
+
+			SetContentView (Resource.Layout.NewsMain);
 		}
 	}
 }

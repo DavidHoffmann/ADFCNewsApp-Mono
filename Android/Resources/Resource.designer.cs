@@ -799,6 +799,12 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050044
+			public const int NewsDetails = 2131034180;
+			
+			// aapt resource value: 0x7f050043
+			public const int NewsList = 2131034179;
+			
 			// aapt resource value: 0x7f05001a
 			public const int action_bar = 2131034138;
 			
@@ -904,9 +910,6 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			// aapt resource value: 0x7f050012
 			public const int middle = 2131034130;
 			
-			// aapt resource value: 0x7f050042
-			public const int myButton = 2131034178;
-			
 			// aapt resource value: 0x7f050009
 			public const int never = 2131034121;
 			
@@ -981,6 +984,9 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			
 			// aapt resource value: 0x7f050002
 			public const int tabMode = 2131034114;
+			
+			// aapt resource value: 0x7f050042
+			public const int textView1 = 2131034178;
 			
 			// aapt resource value: 0x7f050029
 			public const int title = 2131034153;
@@ -1105,10 +1111,16 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			public const int abc_search_view = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int Main = 2130903064;
+			public const int NewsDetails = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int support_simple_spinner_dropdown_item = 2130903065;
+			public const int NewsList = 2130903065;
+			
+			// aapt resource value: 0x7f03001a
+			public const int NewsMain = 2130903066;
+			
+			// aapt resource value: 0x7f03001b
+			public const int support_simple_spinner_dropdown_item = 2130903067;
 			
 			static Layout()
 			{

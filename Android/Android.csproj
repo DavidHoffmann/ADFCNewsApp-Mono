@@ -85,6 +85,9 @@
     <Compile Include="Activities\NewsActivity.cs" />
     <Compile Include="Base\BaseActivity.cs" />
     <Compile Include="Base\BaseActionBarActivity.cs" />
+    <Compile Include="Base\BaseFragment.cs" />
+    <Compile Include="Fragments\NewsListFragment.cs" />
+    <Compile Include="Fragments\NewsDetailsFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -92,13 +95,16 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\values\Style.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable-land\splash.png" />
     <AndroidResource Include="Resources\values\analytics.xml" />
+    <AndroidResource Include="Resources\layout\NewsMain.axml" />
+    <AndroidResource Include="Resources\layout\NewsList.axml" />
+    <AndroidResource Include="Resources\layout\NewsDetails.axml" />
+    <AndroidResource Include="Resources\layout-sw600dp-land\NewsMain.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -120,5 +126,7 @@
   <ItemGroup>
     <Folder Include="Activities\" />
     <Folder Include="Base\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="Resources\layout-sw600dp-land\" />
   </ItemGroup>
 </Project>
