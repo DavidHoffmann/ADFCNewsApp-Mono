@@ -109,6 +109,7 @@
     <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+<<<<<<< HEAD
     <AndroidResource Include="Resources\drawable\ab_background_textured_appadfc.xml" />
     <AndroidResource Include="Resources\drawable\appadfcholo_activated_background_holo_light.xml" />
     <AndroidResource Include="Resources\drawable\appadfcholo_btn_check_holo_light.xml" />
@@ -643,6 +644,8 @@
     <AndroidResource Include="Resources\values-v11\themes_appadfcholo.xml" />
     <AndroidResource Include="Resources\values-v14\styles_appadfc.xml" />
     <AndroidResource Include="Resources\values-v9\themes_appadfcholo.xml" />
+=======
+>>>>>>> b500720ced855c0775685856c84b727f1dee1ab0
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
