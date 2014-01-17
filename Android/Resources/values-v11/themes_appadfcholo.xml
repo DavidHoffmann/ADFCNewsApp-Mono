@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AppADFCHolo" parent="@style/_AppADFCHolo"/>
+
+  <style name="_AppADFCHolo" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="android:editTextBackground">@drawable/appadfcholo_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#99e59900</item>
+    <item name="android:textSelectHandleLeft">@drawable/appadfcholo_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/appadfcholo_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/appadfcholo_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppADFCHolo</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/appadfcholo_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/appadfcholo_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonAppADFCHolo</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAppADFCHolo</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerAppADFCHolo</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppADFCHolo</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarAppADFCHolo</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarAppADFCHolo</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppADFCHolo</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppADFCHolo</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleAppADFCHolo</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/appadfcholo_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/appadfcholo_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/appadfcholo_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

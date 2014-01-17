@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AppADFCHolo" parent="@style/_AppADFCHolo"/>
+
+  <style name="_AppADFCHolo" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="android:editTextStyle">@style/EditTextAppADFCHolo</item>
+
+    <item name="android:textColorHighlight">#99e59900</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppADFCHolo</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxAppADFCHolo</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonAppADFCHolo</item>
+
+    <item name="android:buttonStyle">@style/ButtonAppADFCHolo</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAppADFCHolo</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerAppADFCHolo</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppADFCHolo</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppADFCHolo</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarAppADFCHolo</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarAppADFCHolo</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppADFCHolo</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppADFCHolo</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleAppADFCHolo</item>
+
+    <item name="android:listViewStyle">@style/ListViewAppADFCHolo</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewAppADFCHolo.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemAppADFCHolo</item>
+
+  </style>
+
+</resources>

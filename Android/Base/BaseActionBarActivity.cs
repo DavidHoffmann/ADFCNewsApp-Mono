@@ -34,9 +34,16 @@ using Android.Support.V7.App;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.android.Base
 {
-	[Activity]			
 	public class BaseActionBarActivity : ActionBarActivity
 	{
+		protected override void OnCreate (Bundle savedInstanceState)
+		{
+			base.OnCreate (savedInstanceState);
+		
+
+		}
+
+
 		protected override void OnStart ()
 		{
 			base.OnStart ();

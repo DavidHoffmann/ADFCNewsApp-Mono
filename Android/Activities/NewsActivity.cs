@@ -16,13 +16,15 @@ using de.dhoffmann.xamarin.adfcnewsapp.android.Base;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 {
-	[Activity (Label = "NewsActivity", Theme = "@style/Theme.AppCompat")]			
+	[Activity (Label = "@string/app_name", Theme = "@style/Theme.Appadfc")]
 	public class NewsActivity : BaseActionBarActivity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			SupportRequestWindowFeature(WindowCompat.FeatureActionBar);
+
+			ActionBar.SetHomeButtonEnabled (false);
 
 			Logging.Log (this, Logging.LogType.Debug, "OnCreate");
 

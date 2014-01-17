@@ -35,7 +35,7 @@ using de.dhoffmann.xamarin.adfcnewsapp.android.Base;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 {
-	[Activity (Label = "@string/app_name", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash")]			
+	[Activity (Label = "@string/app_name", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.AppSplash")]			
 	public class SplashActivity : BaseActivity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)
