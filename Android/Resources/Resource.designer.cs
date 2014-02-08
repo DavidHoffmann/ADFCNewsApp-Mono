@@ -26,6 +26,8 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::de.dhoffmann.xamarin.adfcnewsapp.android.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::de.dhoffmann.xamarin.adfcnewsapp.android.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -1600,6 +1602,12 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f0a000e
+			public const int ApplicationName = 2131361806;
+			
+			// aapt resource value: 0x7f0a000d
+			public const int Hello = 2131361805;
+			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_action_bar_home_description = 2131361793;
 			
@@ -1639,14 +1647,14 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android
 			// aapt resource value: 0x7f0a000b
 			public const int abc_shareactionprovider_share_with_application = 2131361803;
 			
+			// aapt resource value: 0x7f0a0011
+			public const int app_name = 2131361809;
+			
+			// aapt resource value: 0x7f0a0010
+			public const int ga_logLevel = 2131361808;
+			
 			// aapt resource value: 0x7f0a000f
-			public const int app_name = 2131361807;
-			
-			// aapt resource value: 0x7f0a000e
-			public const int ga_logLevel = 2131361806;
-			
-			// aapt resource value: 0x7f0a000d
-			public const int ga_trackingId = 2131361805;
+			public const int ga_trackingId = 2131361807;
 			
 			static String()
 			{

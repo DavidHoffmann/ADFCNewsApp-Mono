@@ -32,6 +32,7 @@ using Android.Widget;
 using de.dhoffmann.xamarin.adfcnewsapp.core;
 using System.Threading.Tasks;
 using de.dhoffmann.xamarin.adfcnewsapp.android.Base;
+using de.dhoffmann.xamarin.adfcnewsapp.android.PCLHelper;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 {
@@ -44,8 +45,12 @@ namespace de.dhoffmann.xamarin.adfcnewsapp.android.Activities
 
 			Logging.Log (this, Logging.LogType.Debug, "OnCreate");
 
+			#if DEBUG
+			new de.dhoffmann.xamarin.adfcnewsapp.core.Test.Test(new PCL()).StartTest();
+			#endif
+
 			AppInit appInit = new AppInit();
-			appInit.AppStartAsync ().ContinueWith (t => {
+			appInit.AppStartAsync (new PCLHelper.PCL()).ContinueWith (t => {
 				Logging.Log (this, Logging.LogType.Debug, "OnCreate(): Start activity NewsActivity");
 
 				// redirect to NewsActivity

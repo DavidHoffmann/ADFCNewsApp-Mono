@@ -21,14 +21,16 @@
 //
 using System;
 using System.Threading.Tasks;
+using de.dhoffmann.xamarin.adfcnewsapp.core.Database;
 
 namespace de.dhoffmann.xamarin.adfcnewsapp.core
 {
 	public class AppInit
 	{
-		public Task AppStartAsync()
+		public Task AppStartAsync(PCLBase pcl)
 		{
 			return Task.Factory.StartNew (() => {
+				new DBSchema(pcl, null).UpdateDBSchema();
 			});
 		}
 	}
